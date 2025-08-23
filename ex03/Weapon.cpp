@@ -24,7 +24,6 @@ Weapon::~Weapon()
 
 const std::string& Weapon::getType() const
 {
-    std::cout << &_type << std::endl;
     return (_type);
 }
 
