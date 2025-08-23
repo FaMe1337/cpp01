@@ -1,6 +1,6 @@
 NAME = zombiehorde
 
-SRC = main.cpp Zombie.cpp zombiHorde.cpp
+SRC = main.cpp Zombie.cpp zombieHorde.cpp
 OBJ = $(SRC:.cpp=.o)
 HEADER = Zombie.hpp
 
