@@ -12,7 +12,7 @@
 
 #include "Weapon.hpp"
 
-Weapon::Weapon(const std::string &weapon) : _type(weapon)
+Weapon::Weapon(const std::string weapon) : _type(weapon)
 {
     std::cout << "constructor Weapon called\n";
 }

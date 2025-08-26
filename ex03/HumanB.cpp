@@ -35,3 +35,8 @@ void HumanB::setWeapon(Weapon& weapon)
 {
 	_weapon = &weapon;
 }
+void HumanB::setWeapon(int nullValue) 
+{
+        if (nullValue == 0)
+            _weapon = NULL;
+}

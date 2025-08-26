@@ -4,7 +4,7 @@ SRC = main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
 OBJ = $(SRC:.cpp=.o)
 HEADER = Weapon.hpp HumanA.hpp HumanB.hpp
 
-CC = c++
+CXX = c++
 RM = rm -f
 
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
@@ -12,7 +12,7 @@ CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 all: $(NAME)
 
 $(NAME): $(HEADER) $(OBJ)
-	$(CC) $(CPPFLAGS) $(OBJ) -o $(NAME)
+	$(CXX) $(CPPFLAGS) $(OBJ) -o $(NAME)
 
 clean:
 	$(RM) $(OBJ)

@@ -23,6 +23,7 @@ class HumanB
 		~HumanB();
 		void attack();
 		void setWeapon(Weapon& weapon);
+		void setWeapon(int nullValue);
 
 	private:
 

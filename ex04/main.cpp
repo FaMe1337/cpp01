@@ -41,6 +41,13 @@ int main(int argc, char **argv)
 		std::cerr << "arguments are not the following: <filename> <string1> <string2>" << std::endl;
 		return(1);
 	}
+	std::string s1(argv[2]);
+	std::string s2(argv[3]);
+	if (s1.empty() || s2.empty())
+	{
+		std::cout << "Please don't use empty strings" << std::endl;
+		return (1);
+	}
 	std::ifstream srcFile(argv[1]);
 	if (!srcFile.is_open()) 
 	{
@@ -64,6 +71,6 @@ int main(int argc, char **argv)
 		std::cerr << "can't open the file: " << argv[1] << std::endl;
 		return (1);
 	}
-	newFile << replaceStrings(newFileContent, std::string(argv[2]), std::string(argv[3]));
+	newFile << replaceStrings(newFileContent, s1, s2);
 	newFile.close();
 }
